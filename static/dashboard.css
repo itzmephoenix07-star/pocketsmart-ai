@@ -1,0 +1,708 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+
+    font-family: "Poppins", Arial, sans-serif;
+
+    background: #edf2f8;
+
+    color: #163d66;
+}
+
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.dashboard-navbar {
+
+    width: 100%;
+
+    height: 38px;
+
+    background: #12375d;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 45px;
+
+}
+
+
+.dashboard-logo {
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 4px;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+}
+
+
+.logo-icon {
+
+    color: #f5a623;
+
+    font-size: 11px;
+
+}
+
+
+
+.dashboard-nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+
+.dashboard-nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 7px;
+
+    font-weight: 500;
+
+    white-space: nowrap;
+
+}
+
+
+.dashboard-nav-links a i {
+
+    font-size: 7px;
+
+    margin-right: 2px;
+
+}
+
+
+.dashboard-nav-links a:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+/* =====================================================
+   WELCOME SECTION
+===================================================== */
+
+.welcome-section {
+
+    width: 100%;
+
+    height: 117px;
+
+    background: linear-gradient(
+        110deg,
+        #3d73ad 0%,
+        #173d66 100%
+    );
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+
+.welcome-section h1 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+
+}
+
+
+.welcome-section p {
+
+    width: 430px;
+
+    max-width: 90%;
+
+    color: #e5edf6;
+
+    font-size: 8px;
+
+    line-height: 1.6;
+
+}
+
+
+
+/* =====================================================
+   PLANNER SECTION
+===================================================== */
+
+.planner-section {
+
+    background: #edf2f8;
+
+    padding: 21px 0 16px;
+
+    text-align: center;
+
+}
+
+
+.planner-cards {
+
+    width: 80%;
+
+    max-width: 675px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+
+/* =====================================================
+   PLANNER CARD
+===================================================== */
+
+.planner-card {
+
+    background: white;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(
+            20,
+            55,
+            90,
+            0.14
+        );
+
+    text-align: left;
+
+}
+
+
+.planner-image {
+
+    width: 100%;
+
+    height: 116px;
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+/* Home */
+
+.home-image {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=700&q=80");
+
+}
+
+
+/* Party */
+
+.party-image {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=700&q=80");
+
+}
+
+
+/* Jewelry */
+
+.jewelry-image {
+
+    background-image:
+        url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=80");
+
+}
+
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.planner-content {
+
+    padding: 12px 13px 14px;
+
+}
+
+
+.planner-content h2 {
+
+    color: #3974ad;
+
+    font-size: 10px;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+
+}
+
+
+.planner-content h2 i {
+
+    font-size: 10px;
+
+    margin-right: 3px;
+
+}
+
+
+.planner-content p {
+
+    color: #6b7076;
+
+    font-size: 7px;
+
+    line-height: 1.55;
+
+    min-height: 43px;
+
+    margin-bottom: 11px;
+
+}
+
+
+
+/* =====================================================
+   GET STARTED BUTTON
+===================================================== */
+
+.planner-button {
+
+    width: 100%;
+
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        100deg,
+        #4380bd,
+        #12375e
+    );
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 10px rgba(
+            40,
+            90,
+            145,
+            0.20
+        );
+
+}
+
+
+.planner-button:hover {
+
+    transform: translateY(-1px);
+
+}
+
+
+
+/* =====================================================
+   HISTORY BUTTON
+===================================================== */
+
+.history-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 4px;
+
+    margin-top: 11px;
+
+    padding: 6px 19px;
+
+    background: #ff9d16;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 4px 10px rgba(
+            255,
+            157,
+            22,
+            0.25
+        );
+
+}
+
+
+.history-button i {
+
+    font-size: 7px;
+
+}
+
+
+
+/* =====================================================
+   ACTIVITY SECTION
+===================================================== */
+
+.activity-section {
+
+    background: #edf2f8;
+
+    padding: 42px 0 23px;
+
+}
+
+
+.activity-card {
+
+    width: 61%;
+
+    max-width: 515px;
+
+    margin: 0 auto;
+
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 16px rgba(
+            25,
+            60,
+            100,
+            0.13
+        );
+
+}
+
+
+
+/* =====================================================
+   ACTIVITY HEADER
+===================================================== */
+
+.activity-header {
+
+    height: 36px;
+
+    background: linear-gradient(
+        110deg,
+        #3d75b0,
+        #163d66
+    );
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 13px;
+
+    font-size: 9px;
+
+    font-weight: 600;
+
+}
+
+
+.activity-header i {
+
+    margin-right: 5px;
+
+    font-size: 10px;
+
+}
+
+
+
+/* =====================================================
+   ACTIVITY ITEM
+===================================================== */
+
+.activity-item {
+
+    min-height: 38px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 5px 12px;
+
+    border-bottom:
+        1px solid #edf0f3;
+
+}
+
+
+.activity-item:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.activity-icon {
+
+    width: 21px;
+
+    height: 21px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    margin-right: 9px;
+
+    font-size: 7px;
+
+}
+
+
+.home-icon {
+
+    background: #275d91;
+
+}
+
+
+.party-icon {
+
+    background: #326da2;
+
+}
+
+
+.jewelry-icon {
+
+    background: #2e6598;
+
+}
+
+
+.activity-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.activity-details strong {
+
+    color: #285b8e;
+
+    font-size: 7px;
+
+    font-weight: 600;
+
+    margin-bottom: 2px;
+
+}
+
+
+.activity-details span {
+
+    color: #80858b;
+
+    font-size: 5.5px;
+
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.dashboard-footer {
+
+    width: 100%;
+
+    height: 32px;
+
+    background: #12375d;
+
+    color: #d8e2ec;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 6px;
+
+}
+
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .dashboard-navbar {
+
+        height: auto;
+
+        padding: 10px 20px;
+
+        flex-direction: column;
+
+        gap: 8px;
+
+    }
+
+
+    .dashboard-nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 12px;
+
+    }
+
+
+    .planner-cards {
+
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        max-width: 350px;
+
+    }
+
+
+    .activity-card {
+
+        width: 90%;
+
+        max-width: 500px;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .welcome-section h1 {
+
+        font-size: 21px;
+
+    }
+
+
+    .welcome-section p {
+
+        font-size: 8px;
+
+    }
+
+}
